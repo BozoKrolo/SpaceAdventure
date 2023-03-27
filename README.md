@@ -13,3 +13,6 @@ This work is based on "Star Trek - DSC Enterprise" (https://sketchfab.com/3d-mod
 Control the USS Enterprise with WASDQE and digits 1&2</br>
 
 Control the TIE fighter with arrow keys and NUMPAD(1,3,4,6)</br>
+
+![image](https://user-images.githubusercontent.com/92534297/227974377-14f5ab63-2c7a-4825-ad87-fed1fe8b9860.png)
+
