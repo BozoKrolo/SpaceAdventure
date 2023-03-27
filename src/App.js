@@ -1,25 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls, Stars } from '@react-three/drei';
+import { Suspense } from 'react';
+import Model from './Model';
+import Klingon from './Klingon';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Canvas camera={{ position: [0, 10, -20] }}>
+      <Suspense>
+        <Stars />
+        <ambientLight intensity={1} />
+
+        <OrbitControls />
+        <Klingon />
+        <Model />
+      </Suspense>
+    </Canvas>
   );
 }
-
-export default App;
